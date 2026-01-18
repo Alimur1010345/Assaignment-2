@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-common {
+  font-family: "Inter", sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* common style */
+.header_bg {
+    background-color: #1A0B2E;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.common_button{
+    border-radius: 20px;
+    padding: 12.5px 40px 12.5px 16px;
+    color: #ffff;
+    background:linear-gradient( to right, #F7E93F,#FB09B4,#9100F8);
+}
+/* navbar style */
+.navbar{
+    justify-content: space-around;
+    max-width: 1920px;
+    align-items: center;
+   
+   height: 5.75rem;
+   border-bottom: 1px solid rgb(25, 36, 64);
+}
+.navbar .company_name .wave{
+    font-size: 2.5rem;
+    background:linear-gradient( to top, #F7E93F,#FB09B4,#9100F8);
+   
+   
+}
+.navbar .company_name .tech{
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.navbar_menu{
+    list-style: none;
+}
+.navbar_menu .nav_li .nav_link{
+    color: white;
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+
+/* hero section starts */
+
+.hero_section{
+display: flex;
+    max-width: 1920px;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.hero_circle{
+       position: relative;
+       top: 90px;
+}
+.hero_speaker{
+    position: relative;
+    left: 120px;
+    top: -160px;
+}
+.hero{
+    
+
+}
+
+/* hero description */
+.hero_dec{
+    display: flex;
+    max-width: 1920px;
+    justify-content: center;  
+   margin-top: 40px;
+   text-align: center;
+  
+}
+.description h1{
+    color: white;
+    font-size: 5.8rem;
+    font-weight: 800;
+}
+.description p{
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.subscribe{
+    border-radius: 30px;
+    padding: 12.5px 20px 12.5px 40px;
+    background: transparent;
+    border: none;
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    margin-left: 8px;
+}
