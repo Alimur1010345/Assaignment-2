@@ -6,9 +6,10 @@
   font-family: "Inter", sans-serif;
 
 }
-*{
+body{
     margin: 0;
     padding: 0;
+    background-color: #1A0B2E;
 }
 /* common style */
 .header_bg {
@@ -25,6 +26,26 @@
     color: #ffff;
     background:linear-gradient( to right, #F7E93F,#FB09B4,#9100F8);
 }
+
+.greed_bg{
+     background-color: #1A0B2E ;
+}
+
+.common_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.common_para {
+    font-size: 1rem;
+    color: white;
+    margin-left: 40px;
+    line-height: 24px;
+    
+}
 /* navbar style */
 .navbar{
     justify-content: space-around;
@@ -36,7 +57,11 @@
 }
 .navbar .company_name .wave{
     font-size: 2.5rem;
-    background:linear-gradient( to top, #F7E93F,#FB09B4,#9100F8);
+    background: linear-gradient( to top, #F7E93F,#FB09B4,#9100F8);
+    
+ 
+   
+
    
    
 }
@@ -84,12 +109,18 @@ display: flex;
 
 /* hero description */
 .hero_dec{
-    display: flex;
+  
     max-width: 1920px;
     justify-content: center;  
    margin-top: 40px;
    text-align: center;
-  
+   
+}
+.hero_btn{
+    display: flex;
+    max-width: 1920px;
+    justify-content: center;
+    gap: 8px;
 }
 .description h1{
     color: white;
@@ -101,12 +132,205 @@ display: flex;
     margin-top: 8px;
     margin-bottom: 24px;
 }
-.subscribe{
+.spotify button{
     border-radius: 30px;
-    padding: 12.5px 20px 12.5px 40px;
-    background: transparent;
+    padding: 12.5px 20px 12.5px 48px;
+    color: white;
+    background:linear-gradient( to right, #F7E93F,#FB09B4,#9100F8);
     border: none;
+}
+.subscribe button{
+    border-radius: 30px;
+    padding: 12.5px 20px 12.5px 48px;
     color: #00FF88;
-    border: 2px solid #00FF88;
-    margin-left: 8px;
+    background:linear-gradient( to right, #F7E93F,#FB09B4,#9100F8);
+    border: none;
+    border: 1px solid #00FF88;
+    background: transparent;
+    
+}
+
+/* about section start */
+
+.About{
+    max-width: 1920px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.podcust h1{
+    font-size: 2.85rem;
+    color: white;
+}
+.podcust p{
+    font-size: 1rem;
+    color: white;
+}
+.card h1{
+    color: #00FF88;
+}
+
+.progress_card .card{
+    border: 1ps solid red;
+}
+
+ hr{
+    background-color: #5a4c6c;
+    height: .3px;
+    border: none;
+    width: 50%;
+    margin-top: 80px;
+   
+}
+
+.progress_card .card{
+    width: 300px;
+}
+.progress_card{
+    max-width: 1920px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* greed section  */
+
+.greed_section{
+  padding: 220px 200px 120px 200px; 
+  background-color: #230E3D;
+}
+.grid_ittle{
+    
+    text-align: center;
+}
+.greed_view{
+
+}
+.grid_container{
+    max-width: 1920px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    
+   
+}
+.box{
+    color: white;
+    background-color: #1A0B2E ;
+    border-radius: 10px;
+}
+
+.a_side{
+    grid-row: span 2;
+   background-color: #1A0B2E ;
+    width: 380px;
+    height: 480px;
+    border-radius: 10px;
+}
+.mobile_friendly{
+grid-column: span 2;
+border-radius: 10px;
+}
+.Global_Community{
+    grid-column: span 2;
+    border-radius: 10px;
+}
+.Exclusive_Interviews{
+    grid-column: span 2;
+    border-radius: 10px;
+}
+
+.grid_ittle h1{
+    color: white;
+}
+
+.grid_container .audio{
+    width: 300px;
+}
+.audio h4{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+.audio{
+    text-align: center;
+    justify-content: center;
+}
+
+.a_side img{
+    margin-top: 112px;
+    margin-left: 45px;
+    width: 30px;
+}
+
+.audio p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.mobile_friendly .mobile img{
+    padding: 42px 0px 0px 50px ;
+    width: 30px;
+    
+}
+.Global_Community img{
+    padding: 42px 0px 0px 50px ;
+    width: 30px;
+    
+}
+.Exclusive_Interviews img{
+    padding: 42px 0px 0px 50px ;
+    width: 20px;
+    
+}
+.box img{
+    padding: 42px 0px 0px 50px ;
+    width: 30px;
+    
+}
+ 
+/* for mobile responsive style */
+@media screen and (max-width:576px) {
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+   
+.description h1{
+    font-size: 2rem;
+}
+.description p{
+    font-size: 1.2rem;
+}
+.hero_btn{
+    flex-direction: column;
+}
+
+.progress_card{
+    flex-direction: column;
+    margin-left: 100px;
+}
+.navbar{
+    margin-bottom: 100px;
+}
+.navbar .navbar_menu{
+    flex-direction: column;
+}
+.description {
+    padding: 50px;
+}
+.grid_container{
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid_ittle{
+    width: 100%;
+    text-align: center;
+}
 }
