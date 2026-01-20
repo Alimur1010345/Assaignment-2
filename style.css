@@ -294,7 +294,60 @@ border-radius: 10px;
     width: 30px;
     
 }
- 
+
+/* featured section */
+
+.featured_sec{
+    max-width: 1920px;
+    justify-content: center;
+    display: flex;
+}
+
+.featured_card_container h2{
+    color: white;
+    text-align: center;
+}
+
+.featured_card{
+    display: flex;
+    gap: 30px;
+}
+.featured_card_container{
+    padding: 120px 200px 120px 200px;
+}
+ .featured_sec{
+    background-color: #1A0B2E;
+ }
+ .featured_card .video_card{
+    border-radius: 20px;
+     background-color: #250D44;
+    width: 100%;
+    
+ }
+ .video_card h4{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+
+ }
+ .video_desc{
+    padding: 20px;
+ }
+
+ .video_card p{
+    color: white;
+    text-align: center;
+ }
+
+ .card_footer{
+    margin-left: 25px;
+    margin-bottom: 25px;
+ }
+
+ .video_card .card_footer p{
+    columns: #00FF88;
+ }
 /* for mobile responsive style */
 @media screen and (max-width:576px) {
 
@@ -312,10 +365,15 @@ border-radius: 10px;
 .hero_btn{
     flex-direction: column;
 }
-
+.about_details{
+    padding: 20px;
+    text-align: center;
+}
 .progress_card{
-    flex-direction: column;
-    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+    font-size: 1.2rem;
 }
 .navbar{
     margin-bottom: 100px;
