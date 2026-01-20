@@ -27,6 +27,14 @@ body{
     background:linear-gradient( to right, #F7E93F,#FB09B4,#9100F8);
 }
 
+.common_button:hover{
+    background:linear-gradient( to right, #706e56,#b476a2,#b375de);
+}
+.common_button:active{
+      background:linear-gradient( to right, #706e56,#b476a2,#b375de);
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+}
 .greed_bg{
      background-color: #1A0B2E ;
 }
@@ -55,21 +63,7 @@ body{
    height: 5.75rem;
    border-bottom: 1px solid rgb(25, 36, 64);
 }
-.navbar .company_name .wave{
-    font-size: 2.5rem;
-    background: linear-gradient( to top, #F7E93F,#FB09B4,#9100F8);
-    
- 
-   
 
-   
-   
-}
-.navbar .company_name .tech{
-    font-size: 2.5rem;
-    color: white;
-    
-}
 .navbar_menu{
     list-style: none;
 }
@@ -102,9 +96,15 @@ display: flex;
     left: 120px;
     top: -160px;
 }
-.hero{
-    
-
+.tool_tip button{
+    background-color: #00FF88;
+    padding: 8px 16px 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    position: relative;
+    top: -420px;
+    right: -250px;
+    border: none;
 }
 
 /* hero description */
@@ -214,9 +214,12 @@ display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    
-   
+    gap: 10px;  
+}
+.grid_container::after{
+    display: table;
+    clear: both;
+    content: none;
 }
 .box{
     color: white;
@@ -352,10 +355,7 @@ border-radius: 10px;
 
  /* the host sec */
 
- .the_host{
-    
-
- }
+ 
  .the_host h1{
     text-align: center;
     color: white;
@@ -368,9 +368,7 @@ border-radius: 10px;
     justify-content: center;
     display: flex;
     justify-content: center;
-    gap: 24px;
-   
-    
+    gap: 24px; 
  }
  .host_desc{
     max-width: 50%;
@@ -391,8 +389,7 @@ border-radius: 10px;
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-right: 430px;
-    
+       
  }
 
  .host_img img{
@@ -443,14 +440,29 @@ border-radius: 10px;
     text-align: center;
     margin-top: 32px;
 }
+
+.footer_sec{
+    background-image: url(./assets/footer-bg.png);
+}
+
+
 /* for mobile responsive style */
 @media screen and (max-width:576px) {
 
     .navbar{
-        flex-direction: column;
-        gap: 20px;
+        
     }
-   
+   .navbar_menu, .nav_button{
+    display: none;
+    border: 5px solid white;
+    width: 20px;
+   }
+   .company_name img{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    align-items: center;
+   }
 .description h1{
     font-size: 2rem;
 }
@@ -486,4 +498,27 @@ border-radius: 10px;
     width: 100%;
     text-align: center;
 }
+.featured_card{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+ .host_details{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 24px; 
+ }
+ .the_host_final{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    
+ }
+  .host_desc{
+    width: 100%;
+ }
+ 
 }
