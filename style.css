@@ -91,6 +91,22 @@ display: flex;
        position: relative;
        top: 90px;
 }
+
+.hero_circle img{
+    transition: transform 2s;
+}
+
+.hero_circle img:hover{
+    transform: rotate(360deg);
+}
+
+.hero_speaker img{
+    transition: transform 2s;
+}
+
+.hero_speaker img:hover{
+    transform: rotate(360deg);
+}
 .hero_speaker{
     position: relative;
     left: 120px;
