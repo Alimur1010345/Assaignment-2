@@ -345,9 +345,104 @@ border-radius: 10px;
     margin-bottom: 25px;
  }
 
- .video_card .card_footer p{
-    columns: #00FF88;
+ .card_footer .minuit{
+    color: #00FF88;
+    margin-left: 10px;
  }
+
+ /* the host sec */
+
+ .the_host{
+    
+
+ }
+ .the_host h1{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    
+ }
+
+ .host_details{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+   
+    
+ }
+ .host_desc{
+    max-width: 50%;
+ }
+
+ .social{
+    display: block;
+ }
+ .the_host_final{
+    background-color: rgba(53, 17, 101, 0.4);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 280px;
+ }
+ .social{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-right: 430px;
+    
+ }
+
+ .host_img img{
+    margin-top: 48px;
+ }
+  .host_desc{
+    margin-top: 48px;
+ }
+ .person_name h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+ }
+ .person_name p{
+    color: white;
+    font-size: 1rem;
+    
+ }
+
+ /* footernsec style */
+ .footer_sec{
+    margin-top: 120px;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+ }
+.footer_title img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 120px;
+}
+.footer_social{
+    max-width: 1920px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.social_tag{
+    color: white;
+}
+.all_reghts p{
+    color: white;
+    text-align: center;
+    margin-top: 32px;
+}
 /* for mobile responsive style */
 @media screen and (max-width:576px) {
 
